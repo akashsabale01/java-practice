@@ -18,10 +18,17 @@ class TakingInput{
 
         // System.out.println("Addition = " + c);
 
-        System.out.println("Enter Name: ");
-        String name = scn.nextLine();
+//        System.out.println("Enter Name: ");
+//        String name = scn.nextLine();
+//
+//        System.out.println("Name : " + name);
 
-        System.out.println("Name : " + name);
+        String city ;
+        System.out.println("Enter your city = ");
+        city = scn.nextLine();
+
+        System.out.println("City name is " + city);
+
 
 
     }
