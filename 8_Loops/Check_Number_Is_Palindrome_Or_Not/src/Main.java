@@ -20,8 +20,8 @@ public class Main {
 
         while (num > 0){
             int rem = num % 10;
-            num /= 10;
             numStr += rem;
+            num /= 10;
         }
         return numStr;
     }
