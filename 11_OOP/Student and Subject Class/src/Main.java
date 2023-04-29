@@ -46,6 +46,7 @@ class Subject{
         this.marksObtained = marksObtained;
     }
 
+
     public String toString() {
         return "Subject{" +
                 "subId='" + subId + '\'' +
