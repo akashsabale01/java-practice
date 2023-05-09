@@ -1,4 +1,4 @@
-import  java.util.*;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -39,11 +39,14 @@ public class Main {
         // return set view of key-value pairs using entrySet()
 //        System.out.println(countries.entrySet());
 
+        /*
+            System.out.println(countries.entrySet()); is same as System.out.println(countries);
+        */
         // print
         System.out.println(countries);
 
-        for(String key: countries.keySet()){
-            System.out.println(key + " = " + countries.get(key) );
+        for (String key : countries.keySet()) {
+            System.out.println(key + " = " + countries.get(key));
         }
     }
 }
