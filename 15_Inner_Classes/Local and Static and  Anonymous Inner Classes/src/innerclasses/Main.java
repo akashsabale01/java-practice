@@ -12,7 +12,7 @@ class Outer{
                 System.out.println("Hello From Local Inner class");
             }
         }
-       // new Inner().show(); // Calling using Anonymous Object
+       // new Inner().show(); // Calling using Anonymous object
         Inner innerObj = new Inner();
         innerObj.show();
     }
@@ -25,8 +25,15 @@ class Outer{
                 System.out.println("Welcome Guest by Anonymous Inner Class");
             }
         };
-
         m.greetGuest();
+
+        // Calling method via anonymous object
+//        new Welcome(){
+//            @Override
+//            public void greetGuest() {
+//                System.out.println("Welcome Guest by Anonymous Inner Class");
+//            }
+//        }.greetGuest();
     }
 }
 
@@ -40,7 +47,6 @@ class Test{
             System.out.println("x = " + x);
         }
     }
-
 }
 
 public class Main {
@@ -50,7 +56,10 @@ public class Main {
         outerObj.display();
         outerObj.greet();
 
+        // here we have created object of inner class only no need of creating object of inner class like local inner class
         Test.MyTest t1 = new Test.MyTest();
         t1.showMe();
+
+
     }
 }
